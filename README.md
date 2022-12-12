@@ -11,3 +11,9 @@ Step 3: Go to the Games page. [Here's how to do that.](https://user-images.githu
 Step 4: Choose your game from multiple catagories.
 
 Step 5: Enjoy playing! You're done!
+
+# Changelog
+
+Version 1 - Transfered from w3spaces.com to github
+
+Version 1.1 - Added Home button to Credits and Credits button to home.
