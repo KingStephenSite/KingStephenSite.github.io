@@ -1,6 +1,13 @@
-# KingStephen FAQ
+# How to use the site!
 
-Q1: Can I copy this site without permission?
-A1: Big fat no.
-Q2: Can I use this website?
-A2: Obviously yes.
+Step 1: Go to to KingStephenSite.github.io!
+[Demonstration](https://user-images.githubusercontent.com/120324548/207057237-15d9b92f-4b55-4e8a-86db-f8eef53b578d.png)
+
+
+Step 2: Now, you're on the home page.
+
+Step 3: Go to the Games page. [Here's how to do that.](https://user-images.githubusercontent.com/120324548/207057732-cfe99a09-8477-4019-8425-2209d57470cc.gif)
+
+Step 4: Choose your game from multiple catagories.
+
+Step 5: Enjoy playing! You're done!
