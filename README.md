@@ -17,3 +17,10 @@ Step 5: Enjoy playing! You're done!
 Version 1 - Transfered from w3spaces.com to github
 
 Version 1.1 - Added Home button to Credits and Credits button to home.
+
+Version 1.2 - Updated README.md
+
+
+# Read or TOU
+
+Read our Terms of Use before using the website. It is located on the wiki.
