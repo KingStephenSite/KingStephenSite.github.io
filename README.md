@@ -1,3 +1,8 @@
+#Welcome!
+
+Welcome to the KingStephen Site/Github Page! I'm a member of Rainbow Productions! We have multiple games! Including some jepordy games (educational trivia)! Have fun :)
+
+
 # How to use the site!
 
 Step 1: Go to to KingStephenSite.github.io!
