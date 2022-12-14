@@ -1,85 +1,104 @@
-<div id="comment-box"> 
+HTML 
 
-	<h2>Comments</h2>
-	<ul>
-		<li></li>
-	</ul>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+    </head>
+    <body>
+	
+	<form action="form.php" method="post">
+	
+		<!-- form header -->
+        	<h3>Send us your feedback</h3>
+        
+			<!-- name  -->
+			<p>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" />
+			</p>
+			
+			<!-- email  -->
+			<p>
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email" />
+			</p>
+			
+			<!-- message  -->
+			<p>
+				<label for="message>Message:</label>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			</p>
+			
+			<!-- Submit -->
+			<input type="submit" value="Send Message" />
+			
+		</form>
+		
+    </body>
+</html>
 
-	<form> 
-		<label for="name">Name:</label><br>
-		<input type="text" id="name"><br>
-		<label for="message">Message:</label><br>
-		<input type="text" id="message"><br><br>
-		<button type="submit" id="comment-submit">Submit</button>
-	</form>
+CSS
 
-</div>
-
-<style>#comment-box { 
-  width: 600px;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: #f8f8f8;
-  border: 1px solid #c8c8c8;
-  text-align: center;
+html { 
+    color: #222; 
+    font-family: sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-weight: 400;
+    line-height: 1.50; 
 }
 
-#comment-box h2 {
-  font-size: 20px;
-  color: #000000;
-  margin-top: 0;
+h3 { 
+    font-size: 22px; 
+    font-weight: bold;
+    margin: 0 0 10px 0;
 }
 
-#comment-box li {
-  list-style: none;  
-  padding: 10px;
-  min-height: 30px;
-  background-color: #f3f3f3;
-  margin: 10px 0;
+label, 
+input, 
+textarea { 
+    display: block; 
+    margin: 10px 0;
+    color: #030303; 
 }
 
-#comment-box input {
-  width: 80%;
-  margin-bottom: 10px;
-  padding: 10px;
-  font-family: sans-serif;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  outline: none;
+label { 
+    font-weight: bold; 
+    font-size: 14px; 
+    margin-bottom: 5px;
 }
 
-#comment-box button {
-  background-color: #337ab7;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 8px;
-  font-size: 14px;
-  font-family: sans-serif;
-  border: none;
+input[type="text"], 
+textarea { 
+    border: 1px solid #ccc; 
+    padding: 10px;
 }
-</style>
 
+input[type="submit"] { 
+    background: #9BE; 
+    padding: 8px 10px; 
+    border-radius: 5px; 
+    border: 0; 
+    color: #FFF;
+    font-size:16px; 
+    font-weight:bold;
+    cursor: pointer;
 
-<script>// Collecting necessary elements
-const commentForm = document.querySelector("#comment-box form");
-const nameInput = document.querySelector("#name"); 
-const msgInput = document.querySelector("#message"); 
-const commentList = document.querySelector("#comment-box ul"); 
+}
 
-commentForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  
-  // Create list element for comment
-  const newLi = document.createElement("li");
+JS
 
-  // Add name and messages to list element
-  newLi.innerHTML = `<h5>${nameInput.value}</h5> <p>${msgInput.value}</p>`;
+const formElement = document.querySelector('form');
+const messageInput = formElement.querySelector('#message');
 
-  // Append new list element with comment to comment list
-  commentList.appendChild(newLi);
+// check message length
+messageInput.addEventListener('keyup', e => {
+  const formMessage = e.target.value;
 
-  // Clear input fields
-  nameInput.value = "";
-  msgInput.value = "";
-});</style>
-</script>
+  if(formMessage.length <= 300) {
+    formElement.querySelector('input[type="submit"]').disabled = false;
+  } else {
+    formElement.querySelector('input[type="submit"]').disabled = true;
+  }
+});
