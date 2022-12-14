@@ -38,7 +38,7 @@ HTML
     </body>
 </html>
 
-CSS
+<style>
 
 html { 
     color: #222; 
@@ -86,8 +86,8 @@ input[type="submit"] {
     cursor: pointer;
 
 }
-
-JS
+		   </style>
+<script>
 
 const formElement = document.querySelector('form');
 const messageInput = formElement.querySelector('#message');
@@ -102,3 +102,4 @@ messageInput.addEventListener('keyup', e => {
     formElement.querySelector('input[type="submit"]').disabled = true;
   }
 });
+						  </script>
