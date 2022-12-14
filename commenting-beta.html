@@ -1,0 +1,85 @@
+<div id="comment-box"> 
+
+	<h2>Comments</h2>
+	<ul>
+		<li></li>
+	</ul>
+
+	<form> 
+		<label for="name">Name:</label><br>
+		<input type="text" id="name"><br>
+		<label for="message">Message:</label><br>
+		<input type="text" id="message"><br><br>
+		<button type="submit" id="comment-submit">Submit</button>
+	</form>
+
+</div>
+
+<style>#comment-box { 
+  width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #c8c8c8;
+  text-align: center;
+}
+
+#comment-box h2 {
+  font-size: 20px;
+  color: #000000;
+  margin-top: 0;
+}
+
+#comment-box li {
+  list-style: none;  
+  padding: 10px;
+  min-height: 30px;
+  background-color: #f3f3f3;
+  margin: 10px 0;
+}
+
+#comment-box input {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#comment-box button {
+  background-color: #337ab7;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 14px;
+  font-family: sans-serif;
+  border: none;
+}
+</style>
+
+
+<script>// Collecting necessary elements
+const commentForm = document.querySelector("#comment-box form");
+const nameInput = document.querySelector("#name"); 
+const msgInput = document.querySelector("#message"); 
+const commentList = document.querySelector("#comment-box ul"); 
+
+commentForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  // Create list element for comment
+  const newLi = document.createElement("li");
+
+  // Add name and messages to list element
+  newLi.innerHTML = `<h5>${nameInput.value}</h5> <p>${msgInput.value}</p>`;
+
+  // Append new list element with comment to comment list
+  commentList.appendChild(newLi);
+
+  // Clear input fields
+  nameInput.value = "";
+  msgInput.value = "";
+});</style>
+</script>
