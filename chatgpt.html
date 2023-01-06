@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ChatGPT</title>
+  <title>ChatGPT</title>
   <style>
     #messageInput {
       width: 200px;
@@ -11,6 +11,14 @@
     #sendButton {
       width: 100px;
       height: 30px;
+    }
+
+    #messageDiv {
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      background-color: #eee;
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@openai/chat-gpt/dist/index.min.js"></script>
@@ -25,7 +33,10 @@
 
       // Send the message to ChatGPT
       ChatGPT.sendMessage(message, function(response) {
-        // Do something with the response from ChatGPT
+        // Display the response from ChatGPT
+        var messageDiv = document.createElement('div');
+        messageDiv.innerHTML = '<p>' + response + '</p>';
+        document.body.appendChild(messageDiv);
       });
     }
 
