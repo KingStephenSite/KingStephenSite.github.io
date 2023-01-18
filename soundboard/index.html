@@ -161,6 +161,27 @@ div.control {
 <button class='small-button' onclick="document.getElementById('afewmomentslater').play()">A Few Moments Later</button>
 </div>
 </div>
+<script>
+    // functions for audio control menu
+    function playAll() {
+      const els = document.getElementsByTagName("AUDIO");
+      Array.from(els).forEach((el) => {
+        el.play();
+      });
+    }
+    function stopAll() {
+      const els = document.getElementsByTagName("AUDIO");
+      Array.from(els).forEach((el) => {
+        el.load();
+      });
+    }
+    // https://stackoverflow.com/q/74351622/18183112 ty <3
+  </script>
+  <div class="control">
+    Audio Controls
+    <button class="woah" onclick="playAll()">Provoke Chaos</button>
+    <button class="woah" onclick="stopAll()">Stop Everything</button>
+  </div>
 </body>
  
 </html>
