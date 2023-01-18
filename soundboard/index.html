@@ -120,6 +120,13 @@ div.control {
   border-radius: 10px;
   grid-template-columns: 100px 500px;
 }
+.item {
+  background-color: #80cbc4;
+  border: 1px solid #fff;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 </style>
 </head>
  
@@ -133,19 +140,19 @@ div.control {
 <audio id="abobus2" src="abobus2.wav"></audio>
 <audio id="afewmomentslater" src="afewmomentslater.mp3"></audio>
 <div class="container">
-<div>
+<div class="item">
 <button class='small-button' onclick="document.getElementById('fard').play()">Fard</button>
 </div>
 <br>
-<div>
+<div class="item">
  <button class='small-button' onclick="document.getElementById('abobus').play()">Abobus</button>
 </div>
 <br>
-<div>
+<div class="item">
 <button class='small-button'onclick="document.getElementById('abobus2').play()">Abobus 2</button>
 </div>
 <br>
-<div>
+<div class="item">
 <button class='small-button' onclick="document.getElementById('afewmomentslater').play()">A Few Moments Later</button>
 </div>
 </div>
