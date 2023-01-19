@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rap Song Generator</title>
+        </head>
+        <body>
+            <style>
+               .lyrics {
+                border: 10px;
+                border-radius: 10px;
+                }
+                .generated-lyrics {
+                border: 10px;
+                border-radius: 10px;
+                }
+            </style>
+            <div id="app">
+              <h1>Rap Lyric Generator</h1>
+              <form>
+                <label for="prompt">Enter a topic:</label>
+                <input type="text" id="prompt" placeholder="e.g. technology">
+                <button type="button" id="generate-button">Generate Rap</button>
+              </form>
+              <div id="lyrics">
+                <p id="generated-lyrics"></p>
+              </div>
+            </div>
+            <script src="app.js"></script>
+          </body>
+          
+</html>
