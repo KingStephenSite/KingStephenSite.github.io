@@ -1,4 +1,10 @@
 const axios = require('axios');
+const responseContainer = document.getElementById("response-container");
+const response = document.getElementById("response");
+
+responseContainer.style.display = "block";
+response.innerText = "API response: " + JSON.stringify(apiResponse);
+
 
 async function generateRapLyric() {
   const prompt = "Write a rap about technology";
@@ -16,12 +22,5 @@ async function generateRapLyric() {
     console.error(error);
   }
 }
-
-const responseContainer = document.getElementById("response-container");
-const response = document.getElementById("response");
-
-responseContainer.style.display = "block";
-response.innerText = "API response: " + JSON.stringify(apiResponse);
-
 
 generateRapLyric();
