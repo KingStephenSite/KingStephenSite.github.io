@@ -1,14 +1,13 @@
 const axios = require('axios');
+
+const promptInput = document.getElementById("prompt");
+const generateButton = document.getElementById("generate-button");
+const lyricsContainer = document.getElementById("lyrics");
 const responseContainer = document.getElementById("response-container");
 const response = document.getElementById("response");
 
-responseContainer.style.display = "block";
-response.innerText = "API response: " + JSON.stringify(apiResponse);
-
-
-async function generateRapLyric() {
-  const prompt = "Write a rap about technology";
-
+generateButton.addEventListener("click", async function() {
+  const prompt = promptInput.value;
   try {
     const response = await axios.post('https://api.openai.com/v1/engines/davinci/completions', {
       prompt: prompt,
@@ -17,10 +16,12 @@ async function generateRapLyric() {
     });
 
     const rapLyric = response.data.choices[0].text;
-    console.log(rapLyric);
+    lyricsContainer.innerHTML = `<p> ${rapLyric}</p>`;
+    responseContainer.style.display = "block";
+    response.innerText = "API response: " + JSON.stringify(response.data);
   } catch (error) {
     console.error(error);
+    responseContainer.style.display = "block";
+    response.innerText = "Error: " + error;
   }
-}
-
-generateRapLyric();
+});
