@@ -22,6 +22,6 @@ generateButton.addEventListener("click", async function() {
   } catch (error) {
     console.error(error);
     responseContainer.style.display = "block";
-    response.innerText = "Error: " + error;
+    window.alert = "Error: " + error;
   }
 });
