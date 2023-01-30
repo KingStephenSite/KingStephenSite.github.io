@@ -1,4 +1,7 @@
-<head>
+
+hey JR! what is this   it's a collaboritive text editor! why do we need it  let me put the code in! also do not delete these text k.
+
+<head>
  
 	<title>KingStephen Soundboard [Beta]</title>
     <link rel="icon" sizes="192x192" href="img/mlg-favicon.png" />
@@ -156,6 +159,7 @@ div.control {
 <audio id="mrohio" src="mrohio.mp3"></audio>
 <audio id="biggestbird" src="biggestbird.mp3"></audio>
 <audio id="domdomdom" src="domdomdom.mp3"></audio>
+<audio id="userious" src="areyouseriousrnbro.mp3"></audio>
 	<!-- Buttons -->
 <div class="container">
 <div class="item1">
@@ -232,13 +236,22 @@ div.control {
       <br>
       <div class="item9">
         <button class='small-button' onclick="document.getElementById('domdomdom').play()">Dom</button>
-</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <div class="item">
+        <button class='small-button' onclick="document.getElementById('userious').play()">U serious?</button>
+</div> 
 <script>
     // functions for audio control menu
     function playAll() {
       const els = document.getElementsByTagName("AUDIO");
       Array.from(els).forEach((el) => {
-        el.play();
+        el.play();10
       });
     }
     function stopAll() {
@@ -254,6 +267,6 @@ div.control {
     <button class="woah" onclick="playAll()">Provoke Chaos</button>
     <button class="woah" onclick="stopAll()">Stop Everything</button>
   </div>
-</body>
+</body>10
  
 </html>
