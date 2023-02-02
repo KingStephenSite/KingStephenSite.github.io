@@ -13,7 +13,7 @@ generateButton.addEventListener("click", async function() {
       prompt: prompt,
       max_tokens: 100,
       api_key: "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"
-    });
+    );
 
     const rapLyric = response.data.choices[0].text;
     lyricsContainer.innerHTML = `<p> ${rapLyric}</p>`;
@@ -22,6 +22,6 @@ generateButton.addEventListener("click", async function() {
   } catch (error) {
     console.error(error);
     responseContainer.style.display = "block";
-    window.alert = "Error: " + error;
+    window.alert("Error: " + error;)
   }
-});
+  {
