@@ -1,1 +1,279 @@
-`
+<head>
+ 
+	<title>KingStephen Soundboard [Beta]</title>
+    <link rel="icon" sizes="192x192" href="img/mlg-favicon.png" />
+    <link rel="shortcut icon" href="img/mlg-favicon.png" type="image/x-icon" />
+	<!-- JavaScript -->
+	<script type="text/javascript">
+		// Put code here or set the src attribute
+	</script>
+ 
+	<!-- CSS -->
+	<style type="text/css">
+	<!--
+ 
+		body { background-color: white; margin: 0; padding: 0; font-family: sans-serif; font-size: 12px; }
+		p { margin-bottom: 10px; }
+ 
+	-->
+	</style>
+ <style>
+    body {
+  font-size: 12px;
+  background: #fff !important;
+  border-style: none;
+  font-family: helvetica, arial, sans-serif;
+}
+.sound {
+  border-style: outset;
+  width: 100px;
+  height: 170px;
+}
+.download {
+  cursor: pointer;
+}
+.name {
+  text-align: center;
+  font-size: 15px;
+}
+#instants_container {
+  margin: 30px auto 0;
+  text-align: center;
+  border-style: none;
+}
+.instant {
+  position: relative;
+  vertical-align: top;
+  width: 94px;
+  border-style: none;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+.small-button {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  font-size: xx-large;
+  border-style: none;
+  position: absolute;
+  background: url(img/button.png) no-repeat;
+  cursor: pointer;
+}
+.small-button:active {
+  background: url(img/button-pressed.png) no-repeat;
+  cursor: progress;
+}
+.small-button-background {
+  width: 86px;
+  height: 84px;
+  margin-top: 3px;
+  margin-left: 6px;
+  position: absolute;
+}
+.small-button-shadow {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 5px;
+  background: url(img/button-shadow.png) no-repeat;
+}
+.circle {
+  border-radius: 50%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.flex-container > div {
+  padding: 5px;
+}
+div.control {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  padding: 3px;
+  border: 3px solid #000;
+  background: #ffffff;
+  z-index: 100;
+}
+.woah {
+  cursor: pointer;
+}
+.button {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 5px;
+  background: url(img/button-shadow.png) no-repeat;
+}
+.container {
+  display: table;
+  grid-template-columns: auto auto;
+  background-color: none;
+  padding: 10px;
+  border-radius: 10px;
+  grid-template-columns: 100px 500px;
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+}
+.item {
+  background-color: none;
+  border: 1px solid none;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: inline-table;
+  grid-template-columns: auto auto auto auto;
+}
+.item1, .item5 {
+  table-layout: auto;
+}
+.woah {
+    background-color: #e5ff00
+}
+</style>
+</head>
+ 
+<body>
+ <h1>Soundboard - Beta</h1>
+<br>
+<br>
+<br>
+	<!-- Audio -->
+<audio id="fard" src="_F A R D.wav"></audio>
+<audio id="abobus" src="abobus.mp3"></audio>
+<audio id="abobus2" src="abobus2.wav"></audio>
+<audio id="afewmomentslater" src="afewmomentslater.mp3"></audio>
+<audio id="sendtojesus" src="sendtojesus.mp3"></audio>
+<audio id="baller" src="baller.mp3"></audio>
+<audio id="mrohio" src="mrohio.mp3"></audio>
+<audio id="biggestbird" src="biggestbird.mp3"></audio>
+<audio id="domdomdom" src="domdomdom.mp3"></audio>
+<audio id="userious" src="areyouseriousrnbro.mp3"></audio>
+<audio id="daddysnore" src="aughhhhh.mp3"></audio>
+	<!-- Buttons -->
+<div class="container">
+<div class="item1">
+<button class='small-button' onclick="document.getElementById('fard').play()">💨</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="item2">
+ <button class='small-button' onclick="document.getElementById('abobus').play()">ඞ</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="item3">
+<button class='small-button' onclick="document.getElementById('afewmomentslater').play()">⏳</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="item4">
+    <button class='small-button'onclick="document.getElementById('abobus2').play()">ඞ2</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="item5">
+<button class='small-button' onclick="document.getElementById('sendtojesus').play()">🩴</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="item6">
+  <button class='small-button' onclick="document.getElementById('baller').play()">⚽</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="item7">
+    <button class='small-button' onclick="document.getElementById('mrohio').play()">👨</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="item8">
+      <button class='small-button' onclick="document.getElementById('biggestbird').play()">🐦</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="item9">
+        <button class='small-button' onclick="document.getElementById('domdomdom').play()">Dom</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <div class="item10">
+        <button class='small-button' onclick="document.getElementById('userious').play()">U serious?</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="item11">
+          <button class='small-button' onclick="document.getElementById('daddysnore').play()">😱</button>
+        </div>
+<script>
+    // functions for audio control menu
+    function playAll() {
+      const els = document.getElementsByTagName("AUDIO");
+      Array.from(els).forEach((el) => {
+        el.play();
+      });
+    }
+    function stopAll() {
+      const els = document.getElementsByTagName("AUDIO");
+      Array.from(els).forEach((el) => {
+        el.load();
+      });
+    }
+    // https://stackoverflow.com/q/74351622/18183112 ty <3
+  </script>
+  <div class="control">
+    Audio Controls
+    <button class="woah" onclick="playAll()">Provoke Chaos</button>
+    <button class="woah" onclick="stopAll()">Stop Everything</button>
+  </div>
+</body>
+ 
+</html>
