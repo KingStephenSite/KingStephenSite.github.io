@@ -11,7 +11,7 @@
 document.querySelector("#userinput").focus({
     preventScroll: true
   });
-  
+
   const image_preview = document.getElementById("image-preview");
   const console_output = document.getElementById("console-output");
   
