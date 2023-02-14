@@ -1,13 +1,18 @@
 .heart {
-    font-size: 20px;
     position: fixed;
     top: -1vh;
+    font-size: 2rem;
     transform: translateY(0);
     animation: fall 3s linear forwards;
 }
 
 @keyframes fall {
     to {
-        transform: translateY(105v)
+        transform: translateY(105vh);
     }
+}
+
+
+* {
+    box-sizing: border-box;
 }
