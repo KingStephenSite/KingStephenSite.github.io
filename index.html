@@ -3,9 +3,6 @@
   <head>
     <title>KingStephen - Scratch/FNF Mods</title>
 <link rel="icon" type="image/x-icon" href="icon.ico">
-<script>
-  window.alert("Happy Valentines Day!")
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -96,7 +93,6 @@
   background-color: green;
 }
 </style>
-<link rel="stylesheet" href="heartanim.css">
   </head>
 <body>
 
@@ -215,25 +211,4 @@ function myFunction() {
     <script src="js/lib/jquery-3.3.1.min.js"></script>
 
 </body>
-<script>
-function createheart() {
-    const heart = document.createElement
-    ("div");
-    heart.classList.add("heart");
-
-    heart.style.left = Math.random() * 100 + "vw";
-
-    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
-
-    heart.innerText ='❤️';  
-
-    document.body.appendChild(heart);
-
-    setTimeout(() => {
-        heart.remove();
-    }, 5000);
-}
-
-setInterval(createheart,300);
-</script>
 </html>
