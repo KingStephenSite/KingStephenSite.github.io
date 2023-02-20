@@ -1,0 +1,14 @@
+{
+  "name": "RainbowMusic",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron-compilers": "^1.0.1",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "electron-compile": "^3.3.6"
+  }
+}
