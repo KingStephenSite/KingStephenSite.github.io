@@ -1,74 +1,213 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <title>KingStephen - Scratch/FNF Mods</title>
+<link rel="icon" type="image/x-icon" href="icon.ico">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RainbowMusic</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+    <script type="text/javascript">
+    (function() {
+        window.sib = {
+            equeue: [],
+            client_key: "xteakjdkuqio7q48xmvhiwmu"
+        };
+        /* OPTIONAL: email for identify request*/
+        // window.sib.email_id = 'example@domain.com';
+        window.sendinblue = {};
+        for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {
+        (function(k) {
+            window.sendinblue[k] = function() {
+                var arg = Array.prototype.slice.call(arguments);
+                (window.sib[k] || function() {
+                        var t = {};
+                        t[k] = arg;
+                        window.sib.equeue.push(t);
+                    })(arg[0], arg[1], arg[2]);
+                };
+            })(j[i]);
+        }
+        var n = document.createElement("script"),
+            i = document.getElementsByTagName("script")[0];
+            n.type = "text/javascript", n.id = "sendinblue-js",
+            n.async = !0, n.src = "https://sibautomation.com/sa.js?key="+ window.sib.client_key,
+            i.parentNode.insertBefore(n, i), window.sendinblue.page();
+    })();
+    </script>
+      <!-- Sendinblue Conversations {literal} -->
+<script>
+    (function(d, w, c) {
+        w.SibConversationsID = '638779c1596462798e44a8c1';
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://conversations-widget.sendinblue.com/sib-conversations.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'SibConversations');
+</script>
+<style>
+       /* Add a black background color to the top navigation */
+.topnav {
+  z-index: 1;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+<style>
+    body {
+  background-color: green;
+}
+    div {
+  background-color: green;
+}
+</style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<!DOCTYPE html>
+<html>
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Regular Radio</a>
-        <a href="meme-album.html">Meme Radio</a>
-        <a href="undertale-album.html">Undertale Radio</a>
-        <a href="explicit-album.html">Explicit Radio</a>
-        <a href="https://open.spotify.com/user/31n7psredeo7z6arvbhvbqd3b6f4">Spotify Profile</a>
+  <script>
+    scrolltotop()
+
+   </script>
+  <script src="heartanim.js"></script>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="games.html">Games</a>
+  <a href="mods.html">Mods</a>
+  <a href="activities/education.html">Education</a>
+  <a href="activities/jepordy.html">Jepordy</a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="games.html" class="w3-bar-item w3-button w3-padding-large">Games</a>
+    <a href="mods.html" class="w3-bar-item w3-button w3-padding-large">Mods</a>
+  </div>
+</div>
+
+<!-- Header -->
+<img src="sgh-bg.png" alt="KingStephen Banner">
+
+<!-- First Grid -->
+<div>
+  <h1>Speed</h1>
+  <h2>We're all about speedy games!</h2>
+  <h3>We are very sensitive about our speed for games. If a game is too laggy, we might not add it.</h3>
+  </div>
+<br>
+<br>
+
+<!-- Second Grid -->
+<div>
+  <h1>Efficiency</h1>
+  <h2>We want our games to be Efficient and <b>ARE</b> efficent</h2>
+  <h3>We have very efficient games. We want to <b>keep</b> it that way.</h3>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: Gaming is fun, like cheating on your wife XD</h1>
+</div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">gaslighting is not real your just crazy</h1>
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity"> 
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+     <div>
+     <h1>Our Websites</h1>
+  <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="https://futureservicesinc1978.github.io/" target="_blank">Future Services</a>
+   <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="https://rainbowmusicsite.github.io/" target="_blank">Rainbow Music</a>
+ </div>
+ <p>This website was produced by Rainbow Productions and Social Giant. Get a quote with us now!</p>
+ <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="https://www.rainbowproductions.w3spaces.com" target="_blank">Get a quote</a>
+ <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="credits.html" target="_blank">Credits</a>
+ <!-- Footer end. -->
+ </footer>
+ <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+    <div class="console-container">
+      <div class="console">
+        <h1>Tab Cloaker</h1>
+        <div class="consolebody">
+          <p>Enter a new tab title or a image URL below. Whatever you set will be used all over the site.</p>
+          <p class="console-input">> <input id="userinput" type="url" pattern="https://.*" placeholder="Enter a title or image URL" autocomplete="on" autofocus /></p>
+          <p>Output: <span id="console-output"></span></p>
+        </div>
       </div>
-   <div class="player">
-       <div class="wrapper">
-           <div class="details">
-               <div class="now-playing">PLAYING x OF y</div>
-               <div class="track-art"></div>
-               <div class="track-name">Track Name</div>
-               <div class="track-artist">Track Artist</div>
-           </div>
+      <div class="button-wrapper">
+        <button onclick="changeTabTitle();" class="console-button">Set Title</button>
+        <button onclick="changeTabIcon();" class="console-button">Set Icon</button>
+        <button onclick="resetTabSettings();" class="console-button">Reset</button>
+      </div>
+      <div class="examples">
+        <h2>Presets:</h2>
+        <p><b>Google Search: </b><button onclick="applyUrl('https://storage.googleapis.com/operating-anagram-8280/favicon-32x32.png', 'Math pratice - Google Search');">Apply</button></p>
+        <p><b>Google Classroom: </b><button onclick="applyUrl('https://ssl.gstatic.com/classroom/favicon.png', 'Classes');">Apply</button></p>
+        <p><b>Google Docs: </b><button onclick="applyUrl('https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico', 'Class notes - Google Docs');">Apply</button></p>
+        <p><b>Google Drive: </b><button onclick="applyUrl('https://ssl.gstatic.com/images/branding/product/2x/hh_drive_36dp.png', 'My Drive - Google Drive');">Apply</button></p>
+        <p><b>Canvas: </b><button onclick="applyUrl('https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico' , 'Dashboard');">Apply</button></p>
+        <p><b>Schoology: </b><button onclick="applyUrl('https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico', 'Home | Schoology');">Apply</button></p>
+        <p><b>Summit Learning: </b><button onclick="applyUrl('https://www.summitlearning.org/favicon.ico', 'Summit Learning');">Apply</button></p>
+        <p><b>my NG connect: </b><button onclick="applyUrl('https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.myngconnect.com/login/chooseMainUI.spr&size=16', 'my NG connect');">Apply</button>
+        </p>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588" crossorigin="anonymous"></script>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5756835229788588" data-ad-slot="6230603875" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
 
-           <div class="slider_container">
-               <div class="current-time">00:00</div>
-                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                <div class="total-duration">00:00</div>
-           </div>
-
-           <div class="slider_container">
-               <i class="fa fa-volume-down"></i>
-                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-                <i class="fa fa-volume-up"></i>
-           </div>
-
-           <div class="buttons">
-               <div class="random-track" onclick="randomTrack()">
-                   <i class="fas fa-random fa-2x" title="random"></i>
-               </div>
-               <div class="prev-track" onclick="prevTrack()">
-                    <i class="fa fa-step-backward fa-2x"></i>
-                </div>
-                <div class="playpause-track" onclick="playpauseTrack()">
-                    <i class="fa fa-play-circle fa-5x"></i>
-                </div>
-                <div class="next-track" onclick="nextTrack()">
-                    <i class="fa fa-step-forward fa-2x"></i>
-                </div>
-                <div class="repeat-track" onclick="repeatTrack()">
-                    <i class="fa fa-repeat fa-2x" title="repeat"></i>
-                </div>
-           </div>
-
-            <div id="wave">
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-            </div>  
-       </div>
-   </div>
-   <a href="https://forms.gle/jxb6hMp1TJYGMskU7" class="button">Request a Song</a>
 </body>
-</html>
