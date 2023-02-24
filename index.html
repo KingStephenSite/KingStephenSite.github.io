@@ -55,6 +55,11 @@
         if (d.head) d.head.appendChild(s);
     })(document, window, 'SibConversations');
 </script>
+<script>
+  window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
 <style>
        /* Add a black background color to the top navigation */
 .topnav {
