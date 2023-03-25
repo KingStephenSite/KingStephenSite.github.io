@@ -1,15 +1,7 @@
-# Rainbow Music Radio Collection
+# Read our TOU
 
-This is a site full of radios made from different terms, video games, and more!
+ Read our Terms of Use before using the website. It is located on the wiki.
 
-We currently have the following radios:
+ # Bug Reporting
 
-1) Assorted Radio
-2) Meme Radio
-3) Undertale Radio
-
-We have JVKE, AJR, MarStarBro, and more hit artists!
-
-Let me know if you want a new catagory via the Song Request Form. Make sure to set the type to catagory.
-
-
+ Report bugs or glitches you encounter: https://forms.gle/2huHvJL7zfUNc5KT7
