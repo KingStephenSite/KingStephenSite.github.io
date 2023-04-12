@@ -4,9 +4,12 @@
         <title>KingStephen - Chat</title>
         <script type="text/javascript">
 let password;
-const correctpassword = 'jcpsKS1410';
+let decryptedString = atob('amNQU1NMNTk4OA=='); // Value to decrypt with Base64.
+let decryptedValue = decryptedString.valueOf();
+
+const correct=(decryptedValue); // Output: **********
 password = prompt('Enter the password:');
-if (password == correctpassword) 
+if (password == correct) 
 alert('Password is correct')
 else {
   alert('Access Denied');
